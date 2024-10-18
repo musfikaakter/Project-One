@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100..900&display=swap");
+
+:root {
+  --dark: #151414;
+  --dark-lt: #444343;
+  --dark-2x-lt: #737272;
+  --orange: rgb(241, 91, 34);
+  --white-lt: #f8f8f8;
+  --white-2xlt: #f3f3f3;
+  --white: #ffffff;
+  --orange-lt: rgba(241, 91, 34, 0.5);
+
+  /* rgba(241, 91, 34, 1) */
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+
+  & h1:hover {
+    color: var(--orange);
+    cursor: pointer;
+  }
+}
+
+.container {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+button {
+  outline: none;
+  border: none;
+  font-size: 1.1rem;
+  width: 8.8rem;
+  height: 3.5rem;
+  border-radius: 5px;
+  font-weight: 520;
+}
+
+button:hover {
+  cursor: pointer;
+  scale: 1.03;
+}
+
+/* header starts */
+.header {
+  height: 50.5rem;
+  background-image: url(../images/top-bulb.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: right;
+
+  display: flex;
+  justify-content: right;
+}
+
+.header-details {
+  width: 50%;
+  margin-top: 10rem;
+}
+
+.header-h1 {
+  color: var(--dark);
+  font-size: 3.4rem;
+  font-weight: 700;
+  line-height: 76.25px;
+}
+
+.header-p {
+  color: var(--dark-lt);
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 26px;
+  padding-top: 1rem;
+  padding-left: 1.3rem;
+}
+
+.header-btn {
+  background-color: var(--orange);
+  color: var(--white);
+  margin-top: 2rem;
+}
+
+.header-btn:hover {
+  box-shadow: 3px 3px 7px var(--orange);
+  transition: all 250ms ease-in;
+}
+/* header ends */
+
+/* second part */
+
+.second__part-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.second__image {
+  height: 37rem;
+  width: 28rem;
+}
+
+.second__image img {
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+}
+
+.second__details {
+  width: 40%;
+  margin-top: 4rem;
+
+  & h1 {
+    color: var(--dark);
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 46.92px;
+    margin-bottom: 1.7rem;
+  }
+
+  & p {
+    color: var(--dark-lt);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 1.3rem;
+  }
+
+  & ul {
+    list-style: none;
+    color: var(--dark-lt);
+  }
+
+  & ul i {
+    color: greenyellow;
+  }
+
+  & ul .lists {
+    display: flex;
+    gap: 5px;
+    padding: 0.5rem;
+  }
+}
+
+/* second part end */
+
+/* plans part */
+
+.plans__part {
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.plans__h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 35.19px;
+}
+
+.plans__h1:hover {
+  color: var(--orange);
+}
+
+.plans__image-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.4rem;
+}
+
+.plan__image {
+  text-align: center;
+
+  & p {
+    columns: var(--dark-lt);
+    font-size: 1.1rem;
+    padding-top: 0.3rem;
+  }
+}
+
+/* plans part ends */
+
+/* contact part */
+
+.contact__part {
+  width: 60rem;
+  height: 15rem;
+  margin-top: 6rem;
+  padding: 0;
+  margin-left: 9.8rem;
+  margin-right: 9.8rem;
+  border-radius: 8px;
+
+  background-image: url(../images/watch.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  position: relative;
+}
+
+.contact__image {
+  margin-left: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.gradient {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  background: linear-gradient(to right, var(--orange), transparent);
+  opacity: 0.6;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.contact__image h1 {
+  color: var(--white);
+  font-size: 2rem;
+  margin-top: 2.8rem;
+  z-index: 3;
+}
+
+.contact__image button {
+  background-color: var(--white-2xlt);
+  color: var(--orange);
+  z-index: 3;
+}
+
+.contact__image button:hover {
+  box-shadow: 3px 3px 7px var(--white-2xlt);
+  transition: all 250ms ease-in;
+}
+
+/* contact part ends */
+
+/* footer starts */
+
+.footer__part {
+  width: 100%;
+  margin: 0;
+  padding: 6rem 10rem;
+  margin-top: 6rem;
+  background-color: var(--dark);
+  color: var(--white);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__features {
+  width: 50%;
+  text-align: left;
+}
+
+.footer__features {
+  & h1 {
+    margin-bottom: 1.1rem;
+    font-size: 2.8125rem;
+    font-weight: 700;
+    color: var(--white-lt);
+  }
+
+  & p {
+    margin-bottom: 1.1rem;
+    color: var(--white);
+    font-size: 1rem;
+    line-height: 26px;
+    text-align: left;
+  }
+
+  & .footer__links {
+    margin-bottom: 1.2rem;
+    color: var(--dark-lt);
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    cursor: pointer;
+
+    & a:hover {
+      color: var(--orange);
+    }
+  }
+}
+
+.footer__icons {
+  display: flex;
+  justify-content: space-between;
+  width: 10rem;
+
+  & .f__icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: var(--white);
+    border-radius: 50%;
+
+    display: grid;
+    place-content: center;
+  }
+
+  & .f__icon:hover {
+    background-color: var(--orange-lt);
+  }
+
+  & i {
+    font-size: 1.5rem;
+  }
+}
+
+.footer__subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+
+  & h1 {
+    margin-bottom: 1rem;
+  }
+
+  & h1:hover {
+    cursor: pointer;
+  }
+
+  & input {
+    height: 3.7rem;
+    width: 16rem;
+    background-color: var(--dark);
+    border: 2px solid var(--dark-2x-lt);
+    border-radius: 8px;
+    color: var(--dark-2x-lt);
+    padding-left: 0.4rem;
+    font-size: 1.1rem;
+  }
+
+  & input:focus {
+    outline: none;
+  }
+
+  & button {
+    width: 9rem;
+    background-color: var(--white);
+    border-radius: 8px;
+  }
+
+  & button:hover {
+    box-shadow: 3px 3px 7px var(--white-2xlt);
+    transition: all 250ms ease-in;
+  }
+}
+
+/*  footer ends */
+
+/* transition: all 400ms ease-in; */
